@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CoversalPluginBoxSkinSkin</string>
+    <string name="app_name">CoversalPluginBoxSkin</string>
     <string name="volumeLabel">Volume Label</string>
     <string name="channelLabel">Channel Label</string>
 

@@ -40,35 +40,37 @@ public final class R {
         public static final int source=0x7f020017;
         public static final int stop=0x7f020018;
         public static final int up=0x7f020019;
-        public static final int voldown=0x7f02001a;
-        public static final int volume_label=0x7f02001b;
+        public static final int volume_label=0x7f02001a;
+        public static final int volumedown=0x7f02001b;
         public static final int volup=0x7f02001c;
     }
     public static final class id {
-        public static final int channelLabel=0x7f06000e;
+        public static final int back=0x7f060011;
         public static final int channeldown=0x7f06000d;
         public static final int channelup=0x7f060007;
         public static final int controller=0x7f060000;
         public static final int down=0x7f06000c;
-        public static final int forward=0x7f060015;
-        public static final int guide=0x7f060011;
+        public static final int exit=0x7f060012;
+        public static final int forward=0x7f060017;
+        public static final int guide=0x7f060014;
+        public static final int imageChannelLabel=0x7f06000e;
+        public static final int imageVolumeLabel=0x7f060004;
         public static final int info=0x7f060003;
-        public static final int last=0x7f060012;
+        public static final int last=0x7f060010;
         public static final int left=0x7f060008;
-        public static final int menu=0x7f060010;
+        public static final int menu=0x7f060013;
         public static final int mute=0x7f06000f;
         public static final int ok=0x7f060009;
-        public static final int pause=0x7f060018;
-        public static final int play=0x7f060014;
+        public static final int pause=0x7f06001a;
+        public static final int play=0x7f060016;
         public static final int power=0x7f060001;
-        public static final int record=0x7f060016;
-        public static final int rewind=0x7f060013;
+        public static final int record=0x7f060018;
+        public static final int rewind=0x7f060015;
         public static final int right=0x7f06000a;
         public static final int source=0x7f060002;
-        public static final int stop=0x7f060017;
+        public static final int stop=0x7f060019;
         public static final int up=0x7f060006;
         public static final int voldown=0x7f06000b;
-        public static final int volumeLabel=0x7f060004;
         public static final int volup=0x7f060005;
     }
     public static final class layout {

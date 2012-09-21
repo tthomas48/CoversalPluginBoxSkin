@@ -26,6 +26,7 @@
             android:id="@+id/source"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/key"
             android:background="@drawable/source"
             android:tag="source" />
 
@@ -34,6 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
+            android:src="@drawable/key"
             android:background="@drawable/info"
             android:tag="info" />
     </LinearLayout>
@@ -44,12 +46,12 @@
         android:gravity="center"
         android:orientation="horizontal" >
 
-        <ImageView
-            android:id="@+id/volumeLabel"
+        <com.coversal.ucl.widget.CoversalImageView
+            android:id="@+id/imageVolumeLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/volumeLabel"
-            android:src="@drawable/volume_label" />
+            android:src="@drawable/volume_label"
+            android:contentDescription="@string/volumeLabel" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -70,6 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:background="@drawable/volup"
+                    android:src="@drawable/key"
                     android:tag="volup" />
 
                 <com.coversal.ucl.widget.Key
@@ -78,6 +81,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:background="@drawable/up"
+                    android:src="@drawable/key"
                     android:tag="up" />
 
                 <com.coversal.ucl.widget.Key
@@ -86,6 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:background="@drawable/channelup"
+                    android:src="@drawable/key"
                     android:tag="channelup" />
             </LinearLayout>
 
@@ -102,6 +107,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/left"
+                    android:src="@drawable/key"
                     android:tag="left" />
 
                 <com.coversal.ucl.widget.Key
@@ -111,6 +117,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/ok"
+                    android:src="@drawable/key"
                     android:tag="ok" />
 
                 <com.coversal.ucl.widget.Key
@@ -120,6 +127,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/right"
+                    android:src="@drawable/key"
                     android:tag="right" />
             </LinearLayout>
 
@@ -135,7 +143,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
-                    android:background="@drawable/voldown"
+                    android:background="@drawable/volumedown"
+                    android:src="@drawable/key"
                     android:tag="voldown" />
 
                 <com.coversal.ucl.widget.Key
@@ -145,6 +154,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/down"
+                    android:src="@drawable/key"
                     android:tag="down" />
 
                 <com.coversal.ucl.widget.Key
@@ -154,16 +164,71 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/channeldown"
+                    android:src="@drawable/key"
                     android:tag="channeldown" />
             </LinearLayout>
-        </LinearLayout>
 
-        <ImageView
-            android:id="@+id/channelLabel"
+        </LinearLayout>
+        
+        <com.coversal.ucl.widget.CoversalImageView
+            android:id="@+id/imageChannelLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/channelLabel"
-            android:src="@drawable/channellabel" />
+            android:src="@drawable/channellabel"
+            android:contentDescription="@string/channelLabel" />
+        
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="4dp" >
+
+                <com.coversal.ucl.widget.Key
+                    android:id="@+id/mute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mute"
+                    android:src="@drawable/key"
+                    android:tag="mute" />
+
+                <com.coversal.ucl.widget.Key
+                    android:id="@+id/last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/last"
+                    android:src="@drawable/key"
+                    android:tag="last" />
+
+                <com.coversal.ucl.widget.Key
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/back"
+                    android:src="@drawable/key"
+                    android:tag="back" />
+                <com.coversal.ucl.widget.Key
+                    android:id="@+id/exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/exit"
+                    android:src="@drawable/key"
+                    android:tag="exit" />
+                
+                
+            </LinearLayout>
+        
+        
+
     </LinearLayout>
 
     <LinearLayout
@@ -172,20 +237,13 @@
         android:gravity="center"
         android:orientation="horizontal" >
                 <com.coversal.ucl.widget.Key
-                    android:id="@+id/mute"
+                    android:id="@+id/menu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="0dp"
                     android:layout_marginTop="2dp"
-                    android:background="@drawable/mute"
-                    android:tag="mute" />
-                <com.coversal.ucl.widget.Key
-                    android:id="@+id/menu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginTop="2dp"
                     android:background="@drawable/menu"
+                    android:src="@drawable/key"
                     android:tag="menu" />
                 <com.coversal.ucl.widget.Key
                     android:id="@+id/guide"
@@ -194,20 +252,12 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/guide"
+                    android:src="@drawable/key"
                     android:tag="guide" />
                 
-                <com.coversal.ucl.widget.Key
-                    android:id="@+id/last"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@drawable/last"
-                    android:tag="last" />
                 
         
     </LinearLayout>
-    
 <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -220,6 +270,7 @@
                     android:layout_marginLeft="0dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/rewind"
+                    android:src="@drawable/key"
                     android:tag="rewind" />
                 <com.coversal.ucl.widget.Key
                     android:id="@+id/play"
@@ -228,6 +279,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/play"
+                    android:src="@drawable/key"
                     android:tag="play" />
                 <com.coversal.ucl.widget.Key
                     android:id="@+id/forward"
@@ -236,6 +288,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/forward"
+                    android:src="@drawable/key"
                     android:tag="forward" />
                 
     </LinearLayout>
@@ -252,6 +305,7 @@
                     android:layout_marginLeft="0dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/record"
+                    android:src="@drawable/key"
                     android:tag="record" />
                 <com.coversal.ucl.widget.Key
                     android:id="@+id/stop"
@@ -260,6 +314,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/stop"
+                    android:src="@drawable/key"
                     android:tag="stop" />
                 <com.coversal.ucl.widget.Key
                     android:id="@+id/pause"
@@ -268,6 +323,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/pause"
+                    android:src="@drawable/key"
                     android:tag="pause" />
                 
     </LinearLayout>    
